@@ -1,0 +1,13 @@
+mutil - made of bytes node.js utility functions and objects
+===========================================================
+just a simple collection of different helper functions ready to use with node.js
+
+To run the tests, you need the following dependencies:
+
+- mocha
+- should
+- sinon
+
+For available methods, just run `mocha` inside the root of the module. You will see all available methods and objects together with the spec
+
+This module will change as my needs change

@@ -1,0 +1,21 @@
+{
+  "node": true,
+  "asi": true,
+  "expr": true,
+  "devel": false,
+  "eqeqeq": true,
+  "eqnull": true,
+  "immed": true,
+  "newcap": true,
+  "plusplus": false,
+  "undef": true,
+  "predef": [
+    "describe",
+    "beforeEach",
+    "afterEach",
+    "before",
+    "after",
+    "it",
+    "should"
+  ]
+}

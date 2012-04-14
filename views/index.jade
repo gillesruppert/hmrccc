@@ -1,0 +1,44 @@
+h1= title
+h2 Euro to GBP Converter
+p Welcome to #{title}
+p
+  label(for='rate') Exchange rate (£1 = )
+  select#rate
+    option Please select a month
+    script
+    each rate, month in months
+      option(value=rate)= month
+    
+  p
+    label(for='val') Amount in €
+    input#val(type='number')
+  p
+    label(for='output') Amount in £
+    input#output(type='number')
+
+script
+  function $(id) {
+    return document.getElementById(id)
+  }
+
+  var f = $('convert'),
+      rate = $('rate'),
+      val = $('val'),
+      op = $('output')
+  
+  val.onchange = function() {
+    var r = getRate(),
+        v = parseFloat(val.value, 10),
+        result;
+    result = v / r
+    // round to to figures
+    result = parseInt(result * 100, 10) / 100
+    op.value = result
+    return false
+  }
+  
+  function getRate() {
+    var i = rate.selectedIndex,
+        os = rate.getElementsByTagName('option')
+    return parseFloat(os[i].value, 10)
+  }
