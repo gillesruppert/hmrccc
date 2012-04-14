@@ -1,0 +1,9 @@
+Todo
+----
+- cache invalidation for the crawler
+- make a proper library out of the crawler
+- add year selector to the converter
+- structure the code better!
+  - think of nice ways of structuring express apps
+  - look at the express examples
+- add copy button? - nothing flash based or is that still better than nothing?
