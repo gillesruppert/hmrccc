@@ -38,7 +38,7 @@ describe('hmrc_crawl', function() {
 
   describe('#getValuesForYear', function() {
     it('should return a hash with the values for the year', function(done) {
-      this.timeout(5000)
+      this.timeout(10000)
 
       function fn (err, values) {
         should.exist(values)
@@ -46,7 +46,31 @@ describe('hmrc_crawl', function() {
         should.not.exist(err)
         should.exist(values[0])
         should.exist(values[0].rate)
+        values.should.have.length(12)
+        values[0].name.should.equal( '01-2011' )
+        values[1].name.should.equal( '02-2011' )
+        values[2].name.should.equal( '03-2011' )
+        values[3].name.should.equal( '04-2011' )
+        values[4].name.should.equal( '05-2011' )
+        values[5].name.should.equal( '06-2011' )
+        values[6].name.should.equal( '07-2011' )
+        values[7].name.should.equal( '08-2011' )
+        values[8].name.should.equal( '09-2011' )
+        values[9].name.should.equal( '10-2011' )
+        values[10].name.should.equal( '11-2011' )
+        values[11].name.should.equal( '12-2011' )
         values[0].rate.should.equal( '1.1756' )
+        values[1].rate.should.equal( '1.1846' )
+        values[2].rate.should.equal( '1.1867' )
+        values[3].rate.should.equal( '1.1502' )
+        values[4].rate.should.equal( '1.1307' )
+        values[5].rate.should.equal( '1.1331' )
+        values[6].rate.should.equal( '1.1179' )
+        values[7].rate.should.equal( '1.1368' )
+        values[8].rate.should.equal( '1.1382' )
+        values[9].rate.should.equal( '1.14' )
+        values[10].rate.should.equal( '1.1471' )
+        values[11].rate.should.equal( '1.1621' )
         done()
       }
 
