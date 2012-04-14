@@ -1,16 +1,16 @@
 {
-    "name": "hmrc"
-  , "version": "0.0.1"
-  , "private": true
-  , "dependencies": {
-      "express": "2.5.8"
-    , "jade": ">= 0.0.1"
-    , "mutil": ">= 0.0.1"
-    , "jsdom": "*"
-    , "underscore": "*"
-  }
-  , "dev-dependencies": {
-      "should": "*"
-    , "sinon": "*"
+  "name": "hmrc",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.8",
+    "jade": ">= 0.0.1",
+    "mutil": ">= 0.0.1",
+    "jsdom": "*",
+    "underscore": "*"
+  },
+  "dev-dependencies": {
+    "should": "*",
+    "sinon": "*"
   }
 }
