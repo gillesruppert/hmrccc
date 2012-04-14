@@ -2,6 +2,7 @@
   "name": "hmrc",
   "version": "0.0.1",
   "private": true,
+  "subdomain": "hmrccc",
   "dependencies": {
     "express": "2.5.8",
     "jade": ">= 0.0.1",
@@ -12,5 +13,12 @@
   "dev-dependencies": {
     "should": "*",
     "sinon": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.15"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "app.js"
   }
 }
