@@ -4,10 +4,8 @@ p Welcome to #{title}
 p
   label(for='rate') Exchange rate (£1 = )
   select#rate
-    option Please select a month
-    script
-    each rate, month in months
-      option(value=rate)= month
+    each month in months
+      option(value=month.rate)= monthName(month.name)
     
   p
     label(for='val') Amount in €

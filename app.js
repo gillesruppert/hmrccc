@@ -28,6 +28,29 @@ app.configure('production', function(){
   app.use(express.errorHandler())
 })
 
+var monthNames = [
+  '', // empty value to make the array index 1 based
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+app.helpers({
+  monthName: function(month) {
+    month = month.split('-')
+    var monthIndex = parseInt(month[0], 10)
+    return monthNames[monthIndex] + ' ' + month[1]
+  }
+})
+
 // Routes
 
 app.get('/', routes.index);
