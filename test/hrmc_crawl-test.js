@@ -93,7 +93,8 @@ describe('hmrc_crawl', function() {
       getEuroValueforMonth.should.be.a('function')
       this.timeout(5000)
 
-      function fn(value) {
+      function fn(err, value) {
+        should.not.exist(err)
         should.exist(value)
         value.should.equal('1.1756')
         done()
