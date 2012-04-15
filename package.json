@@ -1,6 +1,6 @@
 {
   "name": "hmrc",
-  "version": "0.0.3-1",
+  "version": "0.0.4-1",
   "private": true,
   "subdomain": "hmrccc",
   "dependencies": {
@@ -8,7 +8,8 @@
     "jade": ">= 0.0.1",
     "mutil": ">= 0.0.1",
     "jsdom": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "devnull": "*"
   },
   "dev-dependencies": {
     "should": "*",
