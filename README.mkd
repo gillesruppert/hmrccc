@@ -1,0 +1,13 @@
+HMRCCC - HMRC Currency Converter
+================================
+
+This is just a little side project to scratch my own itch: I need to convert Euros to GBP regularly, using the HMRC exchange rates. This project is currently hosted on [nodejitsu](http://hmrccc.nodejitsu.com).
+
+The application scrapes the hmrc for all the Euro exchange rates of the current year. It then presents a simple interface that allows you to enter Euro values and get the GBP value.
+In the future, it will probably also include a year selector and other improvements.
+
+Since I usually use it on my iPhone, I added some iPhone meta tag love as well.
+
+It's very rough around the edges, but it allows me to play with node.js, which has become my new favourite hobby.
+
+It's all MIT licensed, so if there is anything that you think is useful, just grab it. Please drop me a note if you. It's nice to hear from people :)
