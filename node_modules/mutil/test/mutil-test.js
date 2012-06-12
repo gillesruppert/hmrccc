@@ -1,4 +1,4 @@
-var util = require('../mutil')
+var util = require('../lib/mutil')
 var should = require('should')
 var sinon = require('sinon')
 

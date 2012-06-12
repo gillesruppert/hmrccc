@@ -1,4 +1,4 @@
-var interpolate = require('../interpolate')
+var interpolate = require('../lib/interpolate')
 var should = require('should')
 var sinon = require('sinon')
 
