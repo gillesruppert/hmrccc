@@ -22,8 +22,7 @@ module.exports = function(app) {
   app.configure('production', function(){
     app.use(express.errorHandler())
     app.logger = new Logger({
-      env: 'production',
-      level: 3
+      env: 'production'
     })
   })
 }
