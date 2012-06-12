@@ -1,6 +1,6 @@
 {
   "name": "hmrc",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "subdomain": "hmrccc",
   "dependencies": {
@@ -20,7 +20,7 @@
     "node": ">= 0.6.15"
   },
   "scripts": {
-    "test": "mocha",
-    "start": "app.js"
+    "test": "make tests",
+    "start": "node app.js"
   }
 }
