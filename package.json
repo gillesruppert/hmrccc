@@ -9,7 +9,8 @@
     "mutil": ">= 0.0.1",
     "jsdom": "*",
     "underscore": "*",
-    "devnull": "*"
+    "devnull": "*",
+    "mongoose": "~2.6.7"
   },
   "dev-dependencies": {
     "should": "*",
