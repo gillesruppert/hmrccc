@@ -1,5 +1,4 @@
 var hmrc = require('../lib/hmrc_crawl')
-var m = require('mutil')
 /*
  * GET home page.
  */
@@ -7,6 +6,7 @@ var m = require('mutil')
 module.exports = function(req, res){
 
   var year = (new Date()).getFullYear()
+  if (year !== 2012) return;
   hmrc.getValuesForYear(year, function(err, months) {
     res.render('index', {
       title: 'HMRC Converter',

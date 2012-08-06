@@ -7,3 +7,15 @@ Todo
   - think of nice ways of structuring express apps
   - look at the express examples
 - add copy button? - nothing flash based or is that still better than nothing?
+
+
+implementing mongodb
+--------------------
+- populate db with current values
+- cron job every week/month
+- populates the db
+- log?
+
+
+- for other requests: grab values for the year from the db, order and show in db 
+- if there are no values for the current year, crawl hmrc website, populates the db and show

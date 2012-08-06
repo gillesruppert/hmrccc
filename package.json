@@ -1,6 +1,6 @@
 {
   "name": "hmrc",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": true,
   "subdomain": "hmrccc",
   "dependencies": {
@@ -10,7 +10,8 @@
     "jsdom": "*",
     "underscore": "*",
     "devnull": "*",
-    "mongoose": "~2.6.7"
+    "mongoose": "~2.6.7",
+    "konphyg": "~1.0.5"
   },
   "dev-dependencies": {
     "should": "*",
@@ -18,7 +19,7 @@
     "mocha": "*"
   },
   "engines": {
-    "node": ">= 0.6.15"
+    "node": "v0.6.x"
   },
   "scripts": {
     "test": "make tests",
