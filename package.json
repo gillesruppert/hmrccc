@@ -9,9 +9,9 @@
     "mutil": ">= 0.0.1",
     "jsdom": "*",
     "underscore": "*",
-    "devnull": "*",
     "mongoose": "~2.6.7",
-    "konphyg": "~1.0.5"
+    "konphyg": "~1.0.5",
+    "winston": "~0.6.2"
   },
   "dev-dependencies": {
     "should": "*",

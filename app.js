@@ -1,6 +1,6 @@
 var express = require('express')
 var app = module.exports = express.createServer()
-var logger = new (require('devnull'))()
+var logger = require('winston')
 
 // Configuration
 require('./configure')(app)

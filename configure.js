@@ -1,5 +1,5 @@
 var express = require('express')
-var Logger = require('devnull')
+var winston = require('winston')
 
 module.exports = function(app) {
   app.configure(function(){
@@ -14,15 +14,22 @@ module.exports = function(app) {
 
   app.configure('development', function(){
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }))
-    app.logger = new Logger({
-      env: 'development'
-    })
+    app.logger = new (winston.Logger)({
+      transports: [
+        new (winston.transports.Console)(),
+        new (winston.transports.File)({filename: 'logs.log'})
+      ],
+      exitOnError: false,
+      colorize: true
+    });
   })
 
   app.configure('production', function(){
     app.use(express.errorHandler())
-    app.logger = new Logger({
-      env: 'production'
-    })
+    app.logger = new (winston.Logger)({
+      transports: [
+        new (winston.transports.Console)({ level: 'error' })
+      ]
+    });
   })
 }
