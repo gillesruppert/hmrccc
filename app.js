@@ -18,3 +18,8 @@ process.on('uncaughtException', function(err) {
 app.listen(3000, function(){
   logger.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 })
+
+process.on('uncaughtexception', function(err) {
+  app.logger.error(err)
+  process.exit(1)
+})
